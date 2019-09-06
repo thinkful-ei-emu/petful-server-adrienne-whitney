@@ -1,3 +1,4 @@
+
 // had thought that could have people have criteria for type of pet looking for and then if they do not match up with the animal in line they go to the back of the queue?
 class _Node {
   constructor(value) {
@@ -36,26 +37,29 @@ class Queue {
   }
 }
 
-function peek(queue) {
-  if(queue.last == null) {
-    return 'No more pets available for adoption';
-  }
-  return queue.last.value;
-}
 
-function isEmpty(queue) {
-  if(queue.first == null) {
-    return 'No more pets available for adoption';
-  }
-}
 
-function display(queue) {
-  let string = '';
-  let tempNode = queue.first;
-  while (tempNode !== null) {
-    string = string + tempNode.value + ' ';
-    tempNode = tempNode.next;
-  }
-  console.log(string);
-  return string; // because needs to actually show up on client side right?
-}
+const peopleQueue = new Queue();
+peopleQueue.enqueue('Adrienne');
+peopleQueue.enqueue('Whitney');
+peopleQueue.enqueue('Tara');
+peopleQueue.enqueue('Zane');
+peopleQueue.enqueue('Chris');
+peopleQueue.enqueue('Casey');
+peopleQueue.enqueue('Nicholas');
+peopleQueue.enqueue('Andrew');
+peopleQueue.enqueue('Arpan');
+peopleQueue.enqueue('Martha');
+peopleQueue.enqueue('Ashley');
+peopleQueue.enqueue('Mantong');
+peopleQueue.enqueue('Blake');
+peopleQueue.enqueue('Paul');
+peopleQueue.enqueue('Christopher');
+peopleQueue.enqueue('Jordon');
+peopleQueue.enqueue('Colleen');
+peopleQueue.enqueue('David');
+peopleQueue.enqueue('Corey');
+peopleQueue.enqueue('Tauhida');
+
+
+module.exports = peopleQueue;

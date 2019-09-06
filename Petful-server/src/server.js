@@ -6,6 +6,7 @@ const helmet = require('helmet');
 const cats = require('./pets/cats.json');
 const dogsRouter = require('./dogs/dogs_router');
 const catsRouter = require('./cats/cats_router');
+const peopleRouter = require('./people/people_router');
 
 const morganOption = (NODE_ENV === 'production')
   ? 'common'
@@ -24,6 +25,7 @@ app.use(express.json());
 
 app.use('/api/dog', dogsRouter);
 app.use('/api/cat', catsRouter);
+app.use('/api/users', peopleRouter);
 // app
 //   .get('/api/dog', (req, res, next) => {
 //     // endpoint for get, delete

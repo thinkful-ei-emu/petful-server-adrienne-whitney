@@ -38,29 +38,6 @@ class Queue {
   }
 }
 
-function peek(queue) {
-  if(queue.last == null) {
-    return 'No more pets available for adoption';
-  }
-  return queue.last.value;
-}
-
-function isEmpty(queue) {
-  if(queue.first == null) {
-    return 'No more pets available for adoption';
-  }
-}
-
-function display(queue) {
-  let string = '';
-  let tempNode = queue.first;
-  while (tempNode !== null) {
-    string = string + tempNode.value + ' ';
-    tempNode = tempNode.next;
-  }
-  console.log(string);
-  return string;
-}
 
 // need to export queue
 
