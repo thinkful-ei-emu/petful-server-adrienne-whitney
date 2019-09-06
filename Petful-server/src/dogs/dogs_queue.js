@@ -1,5 +1,6 @@
+const dogs = require('../pets/dogs.json');
+
 // Queue
-// should I have all of this in the constructor or in a serialize item function?
 class _Node {
   constructor(value) {
     this.value = value;
@@ -58,5 +59,17 @@ function display(queue) {
     tempNode = tempNode.next;
   }
   console.log(string);
-  return string; // because needs to actually show up on client side right?
+  return string;
 }
+
+// need to export queue
+
+const dogQueue = new Queue();
+dogQueue.enqueue(dogs[1]);
+dogQueue.enqueue(dogs[2]);
+dogQueue.enqueue(dogs[3]);
+dogQueue.enqueue(dogs[4]);
+dogQueue.enqueue(dogs[5]);
+// console.log(JSON.stringify(dogQueue));
+
+module.exports = dogQueue;

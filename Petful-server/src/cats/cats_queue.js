@@ -1,4 +1,6 @@
-// had thought that could have people have criteria for type of pet looking for and then if they do not match up with the animal in line they go to the back of the queue?
+const cats = require('../pets/cats.json');
+
+// Queue
 class _Node {
   constructor(value) {
     this.value = value;
@@ -59,3 +61,13 @@ function display(queue) {
   console.log(string);
   return string; // because needs to actually show up on client side right?
 }
+
+const catQueue = new Queue();
+catQueue.enqueue(cats[1]);
+catQueue.enqueue(cats[2]);
+catQueue.enqueue(cats[3]);
+catQueue.enqueue(cats[4]);
+catQueue.enqueue(cats[5]);
+// console.log(JSON.stringify(dogQueue));
+
+module.exports = catQueue;

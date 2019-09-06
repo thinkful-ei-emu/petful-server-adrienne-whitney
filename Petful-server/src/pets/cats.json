@@ -6,42 +6,42 @@
     "sex": "Female",
     "age": "2",
     "breed": "Bengal",
-    "story": "Thrown on the street"
+    "story": "Thrown on the street."
   },
   "2": {
     "imageURL":"https://www.sporcle.com/blog/wp-content/uploads/2018/10/1-58.jpg", 
     "imageDescription": "Black cat in tree.",
-    "name": "",
-    "sex": "",
-    "age": "",
+    "name": "Midnight",
+    "sex": "Male",
+    "age": "1",
     "breed": "American Shorthair",
-    "story": ""
+    "story": "Found living in an alley."
   },
   "3": {
     "imageURL":"https://sbly-web-prod-shareably.netdna-ssl.com/wp-content/uploads/2018/12/26190531/Image-123.jpg", 
     "imageDescription": "Orange tabby cat in a sink.",
-    "name": "",
-    "sex": "",
-    "age": "",
-    "breed": "",
-    "story": ""
+    "name": "Gus",
+    "sex": "Male",
+    "age": "4",
+    "breed": "Tabby",
+    "story": "Owner died."
   },
   "4": {
     "imageURL":"http://d3thpuk46eyjbu.cloudfront.net/uploads/production/9328/1549935288/original/adorable-animal-blur-326875.jpg", 
     "imageDescription": "Siamese cat on outdoor table.",
-    "name": "",
-    "sex": "",
-    "age": "",
-    "breed": "",
+    "name": "Sammy",
+    "sex": "Female",
+    "age": "5",
+    "breed": "Siamese",
     "story": ""
   },
   "5": {
     "imageURL":"https://www.aspcapetinsurance.com/media/2357/persian-cat-facts.jpg", 
     "imageDescription": "White persian cat with green eyes.",
-    "name": "",
-    "sex": "",
-    "age": "",
-    "breed": "",
+    "name": "Simon",
+    "sex": "Male",
+    "age": "4",
+    "breed": "Persian",
     "story": ""
   }
 }
