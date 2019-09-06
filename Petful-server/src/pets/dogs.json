@@ -1,9 +1,48 @@
 {
-  "imageURL": "http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg",
-  "imageDescription": "A smiling golden-brown golden retreiver listening to music.",
-  "name": "Zeus",
-  "sex": "Male",
-  "age": "3",
-  "breed": "Golden Retriever",
-  "story": "Owner Passed away"
+  "1": {
+      "imageURL": "http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg",
+      "imageDescription": "A smiling golden-brown golden retreiver listening to music.",
+      "name": "Zeus",
+      "sex": "Male",
+      "age": "3",
+      "breed": "Golden Retriever",
+      "story": "Owner Passed away"
+  },
+  "2": {
+    "imageURL":"https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12232608/Great-Dane-MP.jpg", 
+    "imageDescription": "Grey great dane puppy.",
+    "name": "",
+    "sex": "",
+    "age": "",
+    "breed": "",
+    "story": ""
+  },
+  "3": {
+    "imageURL":"https://bonbeno.com/pub/media/Plazathemes/blog/images/m/o/mop_dog_is_here.jpg", 
+    "imageDescription": "White komandor in field.",
+    "name": "",
+    "sex": "",
+    "age": "",
+    "breed": "",
+    "story": ""
+  },
+  "4": {
+    "imageURL":"https://bowwowinsurance.com.au/wp-content/uploads/2018/10/rhodesian-ridgeback-puppy.jpg", 
+    "imageDescription": "Rhodesian ridgeback on concrete.",
+    "name": "",
+    "sex": "Female",
+    "age": "",
+    "breed": "",
+    "story": ""
+  },
+  "5": {
+    "imageURL":"https://vetstreet-brightspot.s3.amazonaws.com/89/937a40a41f11e087a80050568d634f/file/Bedlington-Terrier-2-645mk062311.jpg", 
+    "imageDescription": "Bedlington terrier outside.",
+    "name": "",
+    "sex": "",
+    "age": "",
+    "breed": "",
+    "story": ""
+  }
 }
+  
