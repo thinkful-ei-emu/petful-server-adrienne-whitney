@@ -3,6 +3,7 @@ const peopleQueue = require('./people_queue');
 const peopleServices = require('./people_services');
 
 const peopleRouter = express.Router();
+const jsonBodyParser = express.json();
 
 peopleRouter
   .route('/')
@@ -15,6 +16,11 @@ peopleRouter
     } else {
       return res.status(404).send('No more people in queue');
     }
+  })
+  .post(jsonBodyParser, (req, res, next) => {
+    let { name } = req.body;
+    peopleQueue.enqueue(name);
+    res.status(201).end();
   })
   .delete((req, res, next) => {
     peopleQueue.dequeue();
