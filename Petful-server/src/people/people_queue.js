@@ -46,20 +46,6 @@ peopleQueue.enqueue('Tara');
 peopleQueue.enqueue('Zane');
 peopleQueue.enqueue('Chris');
 peopleQueue.enqueue('Casey');
-peopleQueue.enqueue('Nicholas');
-peopleQueue.enqueue('Andrew');
-peopleQueue.enqueue('Arpan');
-peopleQueue.enqueue('Martha');
-peopleQueue.enqueue('Ashley');
-peopleQueue.enqueue('Mantong');
-peopleQueue.enqueue('Blake');
-peopleQueue.enqueue('Paul');
-peopleQueue.enqueue('Christopher');
-peopleQueue.enqueue('Jordon');
-peopleQueue.enqueue('Colleen');
-peopleQueue.enqueue('David');
-peopleQueue.enqueue('Corey');
-peopleQueue.enqueue('Tauhida');
 
 
 module.exports = peopleQueue;
