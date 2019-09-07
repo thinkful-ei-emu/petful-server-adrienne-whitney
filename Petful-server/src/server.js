@@ -1,9 +1,8 @@
 const express = require('express');
 const cors = require('cors');
-const {NODE_ENV} = require('./config');
+const {NODE_ENV, CLIENT_ORIGIN} = require('./config');
 const morgan = require('morgan');
 const helmet = require('helmet');
-const cats = require('./pets/cats.json');
 const dogsRouter = require('./dogs/dogs_router');
 const catsRouter = require('./cats/cats_router');
 const peopleRouter = require('./people/people_router');
@@ -15,23 +14,14 @@ const morganOption = (NODE_ENV === 'production')
 const app = express();
 app.use(morgan(morganOption));
 app.use(helmet());
-app.use(cors());
+app.use(cors({
+  origin: CLIENT_ORIGIN
+}));
 app.use(express.json());
-
-// app
-//   .get('/api/cat', (req, res, next) => {
-//     res.json(cats);
-//   });
 
 app.use('/api/dog', dogsRouter);
 app.use('/api/cat', catsRouter);
 app.use('/api/users', peopleRouter);
-// app
-//   .get('/api/dog', (req, res, next) => {
-//     // endpoint for get, delete
-//     // import queue
-//     res.json(dogQueue);
-//   });
 
 // Catch-all 404
 app.use(function (req, res, next) {
