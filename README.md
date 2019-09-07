@@ -57,3 +57,5 @@ Live Link: [Petful App](https://w-a-petful.now.sh)
 
 ## Credits:
 Created by Adrienne and Whitney
+
+:)
