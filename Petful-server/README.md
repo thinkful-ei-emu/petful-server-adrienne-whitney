@@ -1,26 +1,59 @@
-# Express Boilerplate!
+# PETFUL
 
-This is a boilerplate project used for starting new projects!
+## Summary
+Petful is an app that utilizes the Queue data structure to create a FIFO (First In First Out) system for adopting pets.  Once a user clicks `Adopt Now`, they will be added to the queue, which can be monitored in real time on the right sidebar.  Pets that have already been adopted appear on the left sidebar.  The user may view the cat and dog currently up for adoption, but may not start adopting until it is their turn.  On their turn, the `Adopt` buttons will become enabled and allows the user to adopt as many pets as they wish in 15 seconds, as long as they adopt the current available pets.  Users also have the option of clicking `Nevermind` to return to the home page.  If no cats or no dogs, or no pets are available for adoption, a message will display and users can click the button to navigate back to the home page.
 
-## How do set up?
+Live Link: [Petful App]()
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+## Screenshots
+- Landing Page
+![](./screenshots/LandingPage.png)
+- Adoption Page
+![](./screenshots/AdoptionPage.png)
+- Your Turn to Adopt!
+![](./screenshots/YourTurn.png)
+- After Adoption
+![](./screenshots/Adopted.png)
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+## API Documentation
+`/api/cats`
+* GET -> Gets current cat at the front of the queue
+* DELETE -> Deletes current cat at the front of the queue
 
-## Scripts
+`/api/dogs`
+* GET -> Gets current dog at the front of the queue
+* DELETE -> Deletes current dog at the end of the queue
 
-Start the application `npm start`
+`/api/users`
+* GET -> Gets all users in the queue
+* POST -> Adds users to the end of the queue
+* DELETE -> Deletes the user at the front of the queue
 
-Start nodemon for the application `npm run dev`
+## Technology/Frameworks Used:
 
-Run the tests in watch mode `npm test`
+* HTML
+* CSS
+* JavaScript
+* React
+* Express
+* Node.js
+* Zeit
+* Heroku
+* Git
+* GitHub
+* Visual Studio Code
+* Postman
 
-## Deploying
+## Installation:
 
-When your new project is ready for deployment, add a new heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+### [Petful Server](https://github.com/thinkful-ei-emu/petful-server-adrienne-whitney)
+* Install dependencies: `npm install`
+* Prepare environment file: `.env`
+* Start server with `npm start`
+
+### [Petful Client](https://github.com/thinkful-ei-emu/Adrienne-Whitney-Petful-Client)
+* Install dependencies: `npm install`
+* Start app with `npm start`
+
+## Credits:
+Created by Adrienne and Whitney
