@@ -6,7 +6,8 @@ const dogsRouter = express.Router();
 dogsRouter
   .route('/')
   .get((req, res, next) => {
-    let dog = dogQueue.first ? dogQueue.first.value : null;
+    // let dog = dogQueue.first ? dogQueue.first.value : null;
+    let dog = dogQueue ? dogQueue : null;
     if (dog !== null) {
       return res.status(200).json(dog);
     } else {

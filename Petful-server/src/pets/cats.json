@@ -33,7 +33,7 @@
     "sex": "Female",
     "age": "5",
     "breed": "Siamese",
-    "story": ""
+    "story": "Too many cats in one house."
   },
   "5": {
     "imageURL":"https://www.aspcapetinsurance.com/media/2357/persian-cat-facts.jpg", 
@@ -42,7 +42,7 @@
     "sex": "Male",
     "age": "4",
     "breed": "Persian",
-    "story": ""
+    "story": "Owner died."
   }
 }
   

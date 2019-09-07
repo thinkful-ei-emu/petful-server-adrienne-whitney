@@ -6,7 +6,8 @@ const catsRouter = express.Router();
 catsRouter
   .route('/')
   .get((req, res, next) => {
-    let cat = catQueue.first ? catQueue.first.value : null;
+    // let cat = catQueue.first ? catQueue.first.value : null;
+    let cat = catQueue;
     if (cat !== null) {
       return res.status(200).json(cat);
     } else {
